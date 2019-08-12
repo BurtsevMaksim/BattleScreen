@@ -1,0 +1,10 @@
+C:\Users\Max\source\repos\BattleScreen\bin\Debug\BattleScreen.exe.config
+C:\Users\Max\source\repos\BattleScreen\bin\Debug\BattleScreen.exe
+C:\Users\Max\source\repos\BattleScreen\bin\Debug\BattleScreen.pdb
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.Form1.resources
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.Properties.Resources.resources
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.GenerateResource.cache
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.exe
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.pdb
