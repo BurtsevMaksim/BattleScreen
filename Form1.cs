@@ -17,29 +17,37 @@ namespace BattleScreen
             InitializeComponent();
         }
 
-        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        // Item class for items in listSapsansList
+        public class Sapsan
         {
+            private string listSapsanIP;
+            private string listSapsanName;
+
+            public Sapsan(string strSapsanName, string strSapsanIP)
+            {
+
+                this.listSapsanIP = strSapsanIP;
+                this.listSapsanName = strSapsanName;
+            }
+
+            public string SapsanIP
+            {
+                get
+                {
+                    return listSapsanIP;
+                }
+            }
+
+            public string SapsanName
+            {
+
+                get
+                {
+                    return listSapsanName;
+                }
+            }
 
         }
 
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
