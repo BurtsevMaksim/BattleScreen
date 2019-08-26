@@ -8,3 +8,16 @@ C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.GenerateRes
 C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CoreCompileInputs.cache
 C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.exe
 C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.pdb
+C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\BattleScreen.exe.config
+C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\BattleScreen.exe
+C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\BattleScreen.pdb
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.csprojAssemblyReference.cache
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.Form1.resources
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.Properties.Resources.resources
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.GenerateResource.cache
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CoreCompileInputs.cache
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.exe
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.pdb
+C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\Renci.SshNet.dll
+C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\Renci.SshNet.xml
+C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CopyComplete

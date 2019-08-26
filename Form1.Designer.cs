@@ -33,6 +33,7 @@ namespace BattleScreen
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabSapsans = new System.Windows.Forms.TabPage();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.lblPassengerPlace = new System.Windows.Forms.Label();
             this.lblPassengerVagon = new System.Windows.Forms.Label();
             this.lblPassengerTrainNumber = new System.Windows.Forms.Label();
@@ -42,8 +43,8 @@ namespace BattleScreen
             this.lblPassengerData = new System.Windows.Forms.Label();
             this.txtPassengerMAC = new System.Windows.Forms.TextBox();
             this.txtPassengerTrainNumber = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCommandConsole = new System.Windows.Forms.TextBox();
+            this.txtMainConsole = new System.Windows.Forms.TextBox();
             this.listSapsansList = new System.Windows.Forms.ListBox();
             this.tabLastochkas = new System.Windows.Forms.TabPage();
             this.tabSettings = new System.Windows.Forms.TabPage();
@@ -69,6 +70,7 @@ namespace BattleScreen
             // 
             // tabSapsans
             // 
+            this.tabSapsans.Controls.Add(this.btnConnect);
             this.tabSapsans.Controls.Add(this.lblPassengerPlace);
             this.tabSapsans.Controls.Add(this.lblPassengerVagon);
             this.tabSapsans.Controls.Add(this.lblPassengerTrainNumber);
@@ -78,8 +80,8 @@ namespace BattleScreen
             this.tabSapsans.Controls.Add(this.lblPassengerData);
             this.tabSapsans.Controls.Add(this.txtPassengerMAC);
             this.tabSapsans.Controls.Add(this.txtPassengerTrainNumber);
-            this.tabSapsans.Controls.Add(this.textBox2);
-            this.tabSapsans.Controls.Add(this.textBox1);
+            this.tabSapsans.Controls.Add(this.txtCommandConsole);
+            this.tabSapsans.Controls.Add(this.txtMainConsole);
             this.tabSapsans.Controls.Add(this.listSapsansList);
             this.tabSapsans.Location = new System.Drawing.Point(4, 22);
             this.tabSapsans.Name = "tabSapsans";
@@ -88,6 +90,16 @@ namespace BattleScreen
             this.tabSapsans.TabIndex = 0;
             this.tabSapsans.Text = "Сапсаны";
             this.tabSapsans.UseVisualStyleBackColor = true;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(246, 8);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(116, 23);
+            this.btnConnect.TabIndex = 12;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.BtnConnect_Click);
             // 
             // lblPassengerPlace
             // 
@@ -163,64 +175,30 @@ namespace BattleScreen
             this.txtPassengerTrainNumber.Size = new System.Drawing.Size(100, 20);
             this.txtPassengerTrainNumber.TabIndex = 3;
             // 
-            // textBox2
+            // txtCommandConsole
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 614);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(780, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtCommandConsole.Location = new System.Drawing.Point(6, 614);
+            this.txtCommandConsole.Name = "txtCommandConsole";
+            this.txtCommandConsole.Size = new System.Drawing.Size(780, 20);
+            this.txtCommandConsole.TabIndex = 2;
+            this.txtCommandConsole.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCommandConsole_KeyPress);
             // 
-            // textBox1
+            // txtMainConsole
             // 
-            this.textBox1.Location = new System.Drawing.Point(383, 8);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(403, 600);
-            this.textBox1.TabIndex = 1;
+            this.txtMainConsole.Location = new System.Drawing.Point(383, 8);
+            this.txtMainConsole.Multiline = true;
+            this.txtMainConsole.Name = "txtMainConsole";
+            this.txtMainConsole.ReadOnly = true;
+            this.txtMainConsole.Size = new System.Drawing.Size(403, 600);
+            this.txtMainConsole.TabIndex = 1;
             // 
             // listSapsansList
             // 
             this.listSapsansList.FormattingEnabled = true;
-            this.listSapsansList.Items.AddRange(new object[] {});
             this.listSapsansList.Location = new System.Drawing.Point(114, 8);
             this.listSapsansList.Name = "listSapsansList";
             this.listSapsansList.Size = new System.Drawing.Size(100, 17);
             this.listSapsansList.TabIndex = 0;
-
-            // Adding Items to list
-            ArrayList SapsansArrayList = new ArrayList();
-            SapsansArrayList.Add(new Sapsan("ЭВС01", "10.201.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС02", "10.202.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС03", "10.203.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС04", "10.204.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС05", "10.205.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС06", "10.206.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС07", "10.207.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС08", "10.208.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС09", "10.209.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС10", "10.210.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС11", "10.211.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС12", "10.212.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС13", "10.213.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС14", "10.214.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС15", "10.215.0.10"));
-            SapsansArrayList.Add(new Sapsan("ЭВС16", "10.216.0.10"));
-            listSapsansList.DataSource = SapsansArrayList;
-
-            // Set the long name as the property to be displayed and the short
-            // name as the value to be returned when a row is selected.  Here
-            // these are properties; if we were binding to a database table or
-            // query these could be column names.
-            listSapsansList.DisplayMember = "SapsanName";
-            listSapsansList.ValueMember = "SapsanIP";
-
-            // Bind the SelectedValueChanged event to our handler for it.
-            listSapsansList.SelectedValueChanged +=
-                new EventHandler(listSapsansList_SelectedValueChanged);
-
-            // Ensure the form opens with no rows selected.
-            listSapsansList.ClearSelected();
             // 
             // tabLastochkas
             // 
@@ -287,6 +265,7 @@ namespace BattleScreen
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabSapsans.ResumeLayout(false);
             this.tabSapsans.PerformLayout();
@@ -294,10 +273,6 @@ namespace BattleScreen
             this.tabSettings.PerformLayout();
             this.ResumeLayout(false);
 
-        }
-
-        private void listSapsansList_SelectedValueChanged(object sender, EventArgs e)
-        {
         }
 
         #endregion
@@ -313,8 +288,8 @@ namespace BattleScreen
         private System.Windows.Forms.TextBox txtPersonalLogin;
         private System.Windows.Forms.TextBox txtPassengerMAC;
         private System.Windows.Forms.TextBox txtPassengerTrainNumber;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCommandConsole;
+        private System.Windows.Forms.TextBox txtMainConsole;
         private System.Windows.Forms.Label lblPassengerData;
         private System.Windows.Forms.Label lblPassengerTrainNumber;
         private System.Windows.Forms.Label lblPassengerMAC;
@@ -322,6 +297,7 @@ namespace BattleScreen
         private System.Windows.Forms.TextBox txtPassengerVagon;
         private System.Windows.Forms.Label lblPassengerPlace;
         private System.Windows.Forms.Label lblPassengerVagon;
+        private System.Windows.Forms.Button btnConnect;
     }
 }
 
