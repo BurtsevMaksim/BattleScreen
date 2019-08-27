@@ -21,3 +21,6 @@ C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.pdb
 C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\Renci.SshNet.dll
 C:\Users\Anabolism\source\repos\BattleScreen\bin\Debug\Renci.SshNet.xml
 C:\Users\Anabolism\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CopyComplete
+C:\Users\Max\source\repos\BattleScreen\bin\Debug\Renci.SshNet.dll
+C:\Users\Max\source\repos\BattleScreen\bin\Debug\Renci.SshNet.xml
+C:\Users\Max\source\repos\BattleScreen\obj\Debug\BattleScreen.csproj.CopyComplete

@@ -78,70 +78,20 @@ namespace BattleScreen
 
         }
 
-        // SSH stuff starts here
+        // core SSH stuff starts here
 
-        //public static byte[] _data = new byte[2048];
         public ShellStream stream = null;
         public SshClient client = null;
-
-        //public void StartAsyncRead(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        stream.BeginRead(_data, 0, _data.Length, OnReadCompletion, new MyAsyncInfo(_data, stream));
-        //    }
-        //    catch (Exception exception)
-        //    {
-        //        Console.WriteLine(exception);
-        //    }
-        //}
-
-        //public void OnReadCompletion(IAsyncResult ar)
-        //{
-        //    try
-        //    {
-        //        var mai = (MyAsyncInfo)ar.AsyncState;
-        //        int datalen = mai.Stream.EndRead(ar);
-        //        string line = client.ConnectionInfo.Encoding.GetString(mai.ByteArray, 0, datalen);
-        //        txtMainConsole.AppendText(line);
-        //    }
-        //    catch (Exception exception)
-        //    {
-        //        Console.WriteLine(exception);
-        //    }
-        //}
-
-
-        //public class MyAsyncInfo
-        //{
-        //    public MyAsyncInfo(Byte[] array, ShellStream stream)
-        //    {
-        //        ByteArray = array;
-        //        Stream = stream;
-        //    }
-
-        //    public Byte[] ByteArray { get; set; }
-        //    public ShellStream Stream { get; set; }
-        //}
 
         public void BtnConnect_Click(object sender, EventArgs e)
         {
             try
             {
-                this.client = new SshClient("10.201.0.10", "m.burtsev", "Thu-2331");
+                var selectedItem = listSapsansList.SelectedValue;
+                this.client = new SshClient(Convert.ToString(selectedItem), txtPersonalLogin.Text, txtPersonalPassword.Text);
                 this.client.ConnectionInfo.Timeout = TimeSpan.FromSeconds(120);
                 this.client.Connect();
                 this.stream = this.client.CreateShellStream("streamSSH", 80, 24, 800, 600, 2048);
-                //string cmd = "";
-
-                ////flush buffer
-                //stream.Flush();
-                //while (true)
-                //{
-                //    stream.DataReceived += StartAsyncRead;
-                //    cmd = txtCommandConsole.Text;
-                //    stream.WriteLine(cmd);
-                //}
             }
             catch (Exception exp)
             {
@@ -203,6 +153,11 @@ namespace BattleScreen
             {
 
             }
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
